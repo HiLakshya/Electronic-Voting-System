@@ -10,6 +10,6 @@ It could be utilized to hold elections for various designations and positions in
 The project is currently under construction.
 ## 👨‍💻Authors
 - [@Lakshya Kandpal](https://github.com/HiLakshya)
-- [@Jinendra Jain](https://www.linkedin.com/in/jinendra-jain-2432a9253/)
+- [@Jinendra Jain](https://github.com/jjinendra3)
 - [@Nilesh Verma](https://github.com/NileshVerma001)
 - [@Parth Khare](https://www.linkedin.com/in/parth-khare-765b30252)
