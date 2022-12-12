@@ -12,4 +12,4 @@ The project is currently under construction.
 - [@Lakshya Kandpal](https://github.com/HiLakshya)
 - [@Jinendra Jain](https://github.com/jjinendra3)
 - [@Nilesh Verma](https://github.com/NileshVerma001)
-- [@Parth Khare](https://www.linkedin.com/in/parth-khare-765b30252)
+- [@Parth Khare](https://github.com/Parth1706)
