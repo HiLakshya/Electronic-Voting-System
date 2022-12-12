@@ -1,5 +1,5 @@
 
-#  🗳️Electronic Voting System
+#  🗳️Electronic Voting Machine
 
 The goal of this project is to build a functioning prototype of an Electronic Voting Machine. 
 It could be utilized to hold elections for various designations and positions inside an organization.
