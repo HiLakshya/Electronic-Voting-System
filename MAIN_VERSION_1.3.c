@@ -53,7 +53,7 @@ int loading()
 
     for (i = 0; i < 5; i++)
     {
-        for (j = 0; j < 4*100000000; j++)
+        for (j = 0; j < 4 * 100000000; j++)
         {
             k = 100000 * j;
             if (k == j)
@@ -64,11 +64,11 @@ int loading()
     return 0;
 }
 // loading 2
-int laoding()
+int Loading2()
 {
     int i, j, k, a;
 
-    printf("loading");
+    printf("Loading");
 
     for (i = 0; i < 15; i++)
     {
@@ -397,10 +397,10 @@ int MainMenuText(void)
     printf("********************************************************************************\n");
     printf("\033[0m");
     printf("Enter a choice :");
-    char ch;
-    scanf("%c",&ch);
-    int xu=(char)(ch)-48;
-    return xu;
+    int value;
+    scanf("%d", &value);
+
+    return value;
 }
 
 int main()
@@ -415,25 +415,29 @@ int main()
     total_votes();
     no_party();
     file_arrey();
-    int mainMenuOption;
 MainMenuTextLabel:
-    mainMenuOption=MainMenuText();
-   // scanf("%d", &mainMenuOption);
+    printf("");
+    int mainMenuOption;
+    mainMenuOption = MainMenuText();
+    // scanf("%d", &mainMenuOption);
     if (mainMenuOption == 5)
     {
         Credit();
+        printf("\n");
+        Loading2();
+        system("cls");
         goto MainMenuTextLabel;
     }
 
     else if (mainMenuOption == 6)
     {
-        laoding();
+        Loading2();
         goto end;
     }
     else if (mainMenuOption == 1)
     {
         system("cls");
-        laoding();
+        Loading2();
         system("cls");
         int flag = 1;
         int serial = 101;
@@ -572,7 +576,7 @@ MainMenuTextLabel:
     else if (mainMenuOption == 2)
     {
         system("cls");
-        laoding();
+        Loading2();
         system("cls");
         int quit = 0;
         char p_name[50], c1_name[50], c2_name[50], temp[1];
@@ -660,7 +664,7 @@ MainMenuTextLabel:
     else if (mainMenuOption == 3)
     {
         system("cls");
-        laoding();
+        Loading2();
         system("cls");
         while (1)
         {
@@ -733,9 +737,8 @@ MainMenuTextLabel:
                         printf("\033[1;32m");
                         printf("Vote casted successfully.\n");
                         printf("\033[0m");
-                       
                     }
-                    
+
                     else if (y == 1)
                     {
                         int BBA = UniquenessCheckForEnrollmentNumberBBA(InputStringEnrollmentNumber);
@@ -922,9 +925,9 @@ MainMenuTextLabel:
         if (count == 4)
         {
             system("cls");
-            laoding();
+            Loading2();
             system("cls");
-            printf("Welcome %s, Here are the results:", names[i]);
+            printf("Welcome %s, Here are the results: \n \n", names[i]);
             total_registrartions();
             total_votes();
             total_bbavotes();
@@ -1078,19 +1081,20 @@ MainMenuTextLabel:
                 printf("\033[0m");
                 printf("\n\n\n");
 
+                printf("\n\n Enter any key to continue:\n");
+                getch();
                 goto MainMenuTextLabel;
             }
         }
     }
     else
     {
-        printf("ENTER A VALID INPUT!\n");    
+        printf("ENTER A VALID INPUT!\n");
         goto MainMenuTextLabel;
-
     }
 
 end:
-    //system("cls");
+    system("cls");
     endlogo();
     // printf("xxxxx T H A N K  Y O U xxxxx");
     return 0;
