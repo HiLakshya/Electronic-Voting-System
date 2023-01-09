@@ -27,6 +27,7 @@ Follow the steps below to install the system:
 1. Download the source code EVM.c.
 2. Install the necessary dependencies and compile the code.[or directly run EVM.exe]  
 3. Run the exe file.
+4. Use 'h' as username and password to access the results.
 
 ## 🛠Status
 The project is completed.
